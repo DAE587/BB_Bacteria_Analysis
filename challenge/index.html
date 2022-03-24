@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color:#FEE3D4">
+
+
+  <div class="container">
+    <div class="row">
+      <div class="jumbotron text-center">
+
+        <h1 style="color: #FEE3D4;">Belly Button Biodiversity Dashboard</h1>
+        <h2 style="color: #FEE3D4;">Use the interactive charts below to explore the dataset</h2>
+        <h3 style="color: #FEE3D4;">CHECK IT OUT!</h3>
+
+      </div>
+
+    
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Belly Button: Secrets?<br><small>Microbiologists Point-of-View</small></h3>
+          </div>
+          <div class="col-md-8">
+            <p>
+            Does the bacteria in the human belly button hold the key to producing an artificial beef flavor? For years, microbiologists have tried to determine if beef flavor can be replicated artificially. Now, thanks to research funded by "Probable Beef", they are one step closer to understanding if bacteria from the human belly button can synthesize proteins to replicate the natural beef flavor.<br><br>To test the hypothesis, bacterial samples were gathered and analyzed from thousands of people across the country.  So, does the bacteria found in the human belly button hold the key to the elusive beef flavor? Check out the data for yourself.
+
+
+            </p>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+
+      
+
+      <!--Dropdown menu with an id of selDataset-->  
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+
+        <!-- Results Demographics or selected option-->
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+
+
+      <!--Bar Chart-->
+
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+    
+    <!--Gauge Chart-->
+
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+
+              
+      <!-- Bubble Chart -->
+
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+   
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="js/charts.js"></script>
+
+</body>
+
+</html>
