@@ -1,7 +1,5 @@
 # BB_Bacteria_Analysis
 
-Published website: https://dae587.github.io/BB_Bacteria_Analysis/
-
 Overview of Project
 1.	Create basic plots with Plotly, including bar charts, bubble charts, and guege charts.
 2.	Use D3.json() to fetch external data, such as CSV files and web APIs.
